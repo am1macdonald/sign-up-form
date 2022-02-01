@@ -8,5 +8,89 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div id="left-body">
+      <div id="img-container">
+        <img
+          id="background-img"
+          src="assets/delaney-van-nI5Dv0xMF2M-unsplash.jpg"
+          alt="aloe you a lot"
+        />
+      </div>
+      <div id="hero">
+        <img src="assets/plant.png" alt="plant icon" />
+        <h1>PLANTS</h1>
+      </div>
+      <div id="credit-div">
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/@delaneyvan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Delaney Van</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/potted-aloe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+        <a href="https://www.flaticon.com/free-icons/plant" title="plant icons"
+          >Plant icons created by Freepik - Flaticon</a
+        >
+      </div>
+    </div>
+    <div id="right-body">
+      <div>
+        <p>
+          Do you like plants? Of Course you do! Not that we're offering any.
+        </p>
+        <p>Sign up & show your love for plants today!</p>
+      </div>
+      <div id="form-container">
+        <form action="javascript:void(0);" method="post" name="signup-form">
+          <h2>Let's do this!</h2>
+          <label for="first-name">FIRST NAME</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            required
+            size="25"
+          />
+          <label for="last-name">LAST NAME</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            required
+            size="25"
+          />
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" required size="40" />
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="tel" id="telephone" name="telephone" required size="" />
+          <label for="password">PASSWORD</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            size="25"
+          />
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            size="25"
+          />
+        </form>
+      </div>
+      <div>
+        <button type="submit" form="signup-form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap')
+  
+$see-through: rgba(0, 0, 0, 0.259)
+$the-fonts: 'Oswald', sans-serif
+  
+body
+  height: 100vh
+  width: 100vw
+  display: grid
+  grid-template-columns: 40vw 60vw
+
+  font-family: 'Oswald', sans-serif
+
+#left-body
+  height: 100vh
+  width: 100%
+
+#img-container
+  width: 100%
+  height: 100vh
+
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+
+#background-img
+
+  height: clamp(100vh, 100vh, 200vh)
+  width: min(40vw, 100vw)
+
+#hero
+
+  position: fixed
+  z-index: 9999
+  top: 20%
+
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  width: 32vw
+  padding: 6vh 4vw
+
+  background-color: $see-through
+  color: white
+
+  img
+    display: inline-block
+    width: 3.5rem
+    height: auto
+    filter: invert(100%)
+
+  h1
+    display: inline-block
+    font-size: 4rem
+    letter-spacing: 1vw
+
+#credit-div
+  position: fixed
+  bottom: 0
+  left: 0
+
+
+  width: 40vw
+  padding-bottom: 0.2rem
+  background-color: $see-through
+  color: white
+
+  text-align: center
+  line-height: 1.25rem
+  
+  a
+    color: white
+
+#right-body
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: start
+  
+  height: 100vh
+  width: 100%
+  background-color: #D4D9D8
+
+  p
+    margin: 1vh 2.2vw
+    font-size: 1.5rem
+
+#form-container 
+
+  width: 56vw
+  padding: 2vh 2vw
+  margin: 5vh 0
+  background-color: rgb(241, 245, 244)
+  box-shadow: 0px 3px 10px #999696
+
+
+form
+  box-sizing: border-box
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1.25fr repeat( 6 , 1fr )
+  grid-gap: 0 2vw
+
+  width: max(60%, 400px)
+
+
+
+  h2
+    grid-area: 1 / 1 / 2 / 3
+
+  font-size: 2rem
+
+  label
+    font-size: 0.8rem
+    align-self: end
+    padding-bottom: 0.1rem
+
+  input
+    width: auto
+    min-width: 20vw
+    margin-bottom: 1vh
+
+  #first-name
+    grid-area: 3 / 1 / 4 / 2
+
+  #email
+    grid-area: 5 / 1 / 6 / 2
+
+  #password
+    grid-area: 7 / 1 / 8 / 2
+
+
+button
+  padding: 3vh 2vw
+  margin: 0 2vw
+
+  background-color: #ff6b26
+  color: white
+  font-family: 'Oswald', sans-serif
+  font-weight: 500
+
+  border: none
+  border-radius: 10px
+
+  box-shadow: 2px 2px 10px #999696
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  font-size: 1.5rem
+
+  &:hover
+    transform: scale(0.99)
+
+
+button + p
+  font-size: 1.25rem
+  margin-top: 4vh 
+  a
+    color: #bd6136
+    text-decoration: none
