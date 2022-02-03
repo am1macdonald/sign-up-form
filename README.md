@@ -1,6 +1,6 @@
 # Sign Up Form Project
 
-Thanks for stopping by my Signup Form Project
+Thanks for stopping by my Sign-up Form Project
 
 ## About
 
@@ -12,7 +12,7 @@ My form is strongly based on the model provided as part of the challenge, but wi
 
 This is my first project using 'Sass'!
 
-Otherwise, the Signup page was built with HTML5 and Vanilla Javascript.
+Besides sass, the Sign-up Form was built with HTML5 and Vanilla Javascript.
 
 --under construction--
 
