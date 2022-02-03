@@ -7,7 +7,7 @@ body
   height: 100vh
   width: 100vw
   display: grid
-  grid-template-columns: 40vw 60vw
+  grid-template-columns: 30vw 70vw
 
   font-family: 'Oswald', sans-serif
 
@@ -40,7 +40,7 @@ body
   justify-content: center
   align-items: center
 
-  width: 32vw
+  width: 22vw
   padding: 6vh 4vw
 
   background-color: $see-through
@@ -63,7 +63,7 @@ body
   left: 0
 
 
-  width: 40vw
+  width: 30vw
   padding-bottom: 0.2rem
   background-color: $see-through
   color: white
@@ -91,7 +91,7 @@ body
 
 #form-container 
 
-  width: 56vw
+  width: 66vw
   padding: 2vh 2vw
   margin: 5vh 0
   background-color: rgb(241, 245, 244)
@@ -125,17 +125,34 @@ form
     width: 10rem
     height: 1.25rem
     min-width: 20vw
-    margin-bottom: 1vh
 
     border: 1px solid rgb(164, 165, 165)
     border-radius: 5px
 
     &:valid
       box-shadow: 0 0 4px green
+    &:invalid:not(:focus):not(:placeholder-shown)
+      box-shadow: 0 0 4px red
+    &:invalid:focus:not(:placeholder-shown)
+      & ~ .requirements
+        opacity: 1
+
+
+.requirements
+
+    height: 1rem
+    padding: 0.2rem
+    color: #999
+    transition: 0.28s
+    overflow: hidden
+    color: red
+    font-size: 1rem
+    font-style: italic
+    opacity: 0
 
 
 button
-  padding: 3vh 2vw
+  padding: 2vh 2vw
   margin: 0 2vw
 
   background-color: #ff6b26
@@ -152,8 +169,8 @@ button
   font-size: 1.5rem
 
   &:hover
-    transform: scale(0.99)
-
+    transform: scale(0.95)
+    background-color: #ff5100
 
 button + p
   font-size: 1.25rem
