@@ -1,4 +1,5 @@
 const validate = (() => {
+  let form = document.getElementById('form');
   let password = document.getElementById('password');
   let confirm = document.getElementById('confirm-password');
   let submit = document.getElementById('submit');
@@ -22,6 +23,10 @@ const validate = (() => {
     validate();
   })
   submit.addEventListener('click', (e) => {
-    if (validate() === false) { e.preventDefault() }
+    if (validate() === false || form.checkValidity() === false) { 
+      e.preventDefault()
+    } else if (form.checkValidity() === true){
+      form.reset();
+    }
   })
 })()
