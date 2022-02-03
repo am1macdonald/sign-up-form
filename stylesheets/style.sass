@@ -130,9 +130,13 @@ form
     border-radius: 5px
 
     &:valid
+      background-color: rgb(227, 253, 230)
       box-shadow: 0 0 4px green
+
     &:invalid:not(:focus):not(:placeholder-shown)
+      background-color: rgb(255, 230, 230)
       box-shadow: 0 0 4px red
+
     &:invalid:focus:not(:placeholder-shown)
       & ~ .requirements
         opacity: 1
