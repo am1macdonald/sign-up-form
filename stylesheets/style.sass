@@ -105,9 +105,11 @@ form
   grid-template-rows: repeat( 4 , 1fr )
   grid-gap: 0 2vw
 
-  width: max(60%, 400px)
+  width: 50vw
 
-
+  div
+    display: flex
+    flex-direction: column
 
   h2
     grid-area: 1 / 1 / 2 / 3
@@ -116,13 +118,20 @@ form
 
   label
     font-size: 0.8rem
-    align-self: end
-    padding-bottom: 0.1rem
+    align-self: start
+    margin-bottom: 0.3rem
 
   input
-    width: auto
+    width: 10rem
+    height: 1.25rem
     min-width: 20vw
     margin-bottom: 1vh
+
+    border: 1px solid rgb(164, 165, 165)
+    border-radius: 5px
+
+    &:valid
+      box-shadow: 0 0 4px green
 
 
 button
