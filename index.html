@@ -14,7 +14,7 @@
         <img
           id="background-img"
           src="assets/delaney-van-nI5Dv0xMF2M-unsplash.jpg"
-          alt="aloe you a lot"
+          alt="agave in a pot"
         />
       </div>
       <div id="hero">
@@ -47,7 +47,7 @@
         <p>Sign up & show your love for plants today!</p>
       </div>
       <div id="form-container">
-        <form action="/" method="post" name="signup-form">
+        <form id="form" name="signup-form">
           <h2>Let's do this!</h2>
 
           <div>
@@ -104,7 +104,9 @@
               title="format: 1-123-1234-1234"
               placeholder=" "
             />
-            <div class="requirements">no spaces or special characters</div>
+            <div class="requirements">
+              10 digits. No spaces or special characters
+            </div>
           </div>
 
           <div>
@@ -132,15 +134,13 @@
               maxlength="20"
               placeholder=" "
             />
-            <div class="requirements">does not match</div>
+            <div class="requirements">fill in password</div>
           </div>
         </form>
       </div>
 
       <div>
-        <button id="submit" type="submit" form="signup-form">
-          Create Account
-        </button>
+        <button id="submit" type="submit" form="form">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </div>
