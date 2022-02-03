@@ -6,9 +6,11 @@ const validate = (() => {
   const validate = () => {    
     if (password.value !== confirm.value) {
       confirm.setCustomValidity('Password does not match');
+      confirm.nextElementSibling.innerHTML = 'passwords do not match';
       return false;
     } else {
       confirm.setCustomValidity('');
+      confirm.nextElementSibling.innerHTML = '8-20 characters';
       return true;
     }
   }
