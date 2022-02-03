@@ -22,11 +22,8 @@ const validate = (() => {
   password.addEventListener('keyup', (e) => {
     validate();
   })
-  submit.addEventListener('click', (e) => {
-    if (validate() === false || form.checkValidity() === false) { 
-      e.preventDefault()
-    } else if (form.checkValidity() === true){
-      form.reset();
-    }
+  submit.addEventListener('click', (e) => { 
+    e.preventDefault()
+    if (form.checkValidity() === true){ form.reset(); }
   })
 })()
